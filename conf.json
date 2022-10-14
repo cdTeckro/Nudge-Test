@@ -4,7 +4,7 @@
       "acceptableAssertionUsage": false,
       "acceptableCameraUsage": true,
       "acceptableScreenSharingUsage": true,
-      "aggressiveUserExperience": false,
+      "aggressiveUserExperience": true,
       "aggressiveUserFullScreenExperience": false,
       "asynchronousSoftwareUpdate": true,
       "attemptToBlockApplicationLaunches": false,

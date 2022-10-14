@@ -2,8 +2,8 @@
     "optionalFeatures": {
       "acceptableApplicationBundleIDs": [],
       "acceptableAssertionUsage": false,
-      "acceptableCameraUsage": false,
-      "acceptableScreenSharingUsage": false,
+      "acceptableCameraUsage": true,
+      "acceptableScreenSharingUsage": true,
       "aggressiveUserExperience": true,
       "aggressiveUserFullScreenExperience": true,
       "asynchronousSoftwareUpdate": true,
@@ -25,7 +25,7 @@
         "actionButtonPath": "munki://updates",
         "majorUpgradeAppPath": "/Applications/Install macOS Big Sur.app",
         "requiredInstallationDate": "2021-08-28T00:00:00Z",
-        "requiredMinimumOSVersion": "11.5.2",
+        "requiredMinimumOSVersion": "12.6",
         "targetedOSVersionsRule": "default"
       }
     ],

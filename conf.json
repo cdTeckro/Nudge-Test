@@ -1,6 +1,6 @@
 {
     "optionalFeatures": {
-      "acceptableApplicationBundleIDs": [],
+      "acceptableApplicationBundleIDs": ["com.microsoft.teams", "com.microsoft.package.Microsoft_Outlook.app"],
       "acceptableAssertionUsage": false,
       "acceptableCameraUsage": true,
       "acceptableScreenSharingUsage": true,
@@ -8,33 +8,25 @@
       "aggressiveUserFullScreenExperience": false,
       "asynchronousSoftwareUpdate": true,
       "attemptToBlockApplicationLaunches": false,
-      "attemptToFetchMajorUpgrade": true,
+      "attemptToFetchMajorUpgrade": false,
       "blockedApplicationBundleIDs": [],
       "enforceMinorUpdates": true,
       "terminateApplicationsOnLaunch": false
     },
     "osVersionRequirements": [
       {
-        "aboutUpdateURL_disabled": "https://support.apple.com/en-us/HT211896#macos1121",
-        "aboutUpdateURLs": [
-          {
-            "_language": "en",
-            "aboutUpdateURL": "https://support.apple.com/en-us/HT211896#macos1121"
-          }
-        ],
-        "actionButtonPath": "munki://updates",
         "majorUpgradeAppPath": "/Applications/Install macOS Monterey.app",
         "requiredInstallationDate": "2022-10-28T00:00:00Z",
         "requiredMinimumOSVersion": "12.6",
-        "targetedOSVersionsRule": "default"
+        "targetedOSVersionsRule": "12.5.1"
       }
     ],
     "userExperience": {
       "allowGracePeriods": true,
-      "allowUserQuitDeferrals": true,
-      "allowedDeferrals": 10,
-      "allowedDeferralsUntilForcedSecondaryQuitButton": 14,
-      "approachingRefreshCycle": 6000,
+      "allowUserQuitDeferrals": false,
+      "allowedDeferrals": 3,
+      "allowedDeferralsUntilForcedSecondaryQuitButton": 4,
+      "approachingRefreshCycle": 120,
       "approachingWindowTime": 72,
       "elapsedRefreshCycle": 300,
       "gracePeriodInstallDelay": 23,
@@ -42,21 +34,16 @@
       "gracePeriodPath": "/private/var/db/.AppleSetupDone",
       "imminentRefreshCycle": 600,
       "imminentWindowTime": 24,
-      "initialRefreshCycle": 18000,
-      "maxRandomDelayInSeconds": 1200,
+      "initialRefreshCycle": 60,
+      "maxRandomDelayInSeconds": 12,
       "noTimers": false,
       "nudgeRefreshCycle": 60,
       "randomDelay": false
     },
     "userInterface": {
-      "actionButtonPath": "munki://updates",
       "fallbackLanguage": "en",
-      "forceFallbackLanguage": false,
+      "forceFallbackLanguage": true,
       "forceScreenShotIcon": false,
-      "iconDarkPath": "/somewhere/logoDark.png",
-      "iconLightPath": "/somewhere/logoLight.png",
-      "screenShotDarkPath": "/somewhere/screenShotDark.png",
-      "screenShotLightPath": "/somewhere/screenShotLight.png",
       "showDeferralCount": true,
       "simpleMode": false,
       "singleQuitButton": false,
@@ -64,8 +51,8 @@
         {
           "_language": "en",
           "actionButtonText": "Update Device",
-          "customDeferralButtonText": "Custom",
-          "customDeferralDropdownText": "Defer",
+          "customDeferralButtonText": "Custom Def Time",
+          "customDeferralDropdownText": "Defer 123",
           "informationButtonText": "More Info",
           "mainContentHeader": "Your device will restart during this update",
           "mainContentNote": "Important Notes",
@@ -76,7 +63,7 @@
           "oneHourDeferralButtonText": "One Hour",
           "primaryQuitButtonText": "Later",
           "secondaryQuitButtonText": "I understand",
-          "subHeader": "A friendly reminder from your local IT team"
+          "subHeader": "A friendly reminder from IT Services"
         }
       ]
     }

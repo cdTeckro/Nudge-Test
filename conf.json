@@ -23,14 +23,14 @@
           }
         ],
         "actionButtonPath": "munki://updates",
-        "majorUpgradeAppPath": "/Applications/Install macOS Big Sur.app",
-        "requiredInstallationDate": "2021-08-28T00:00:00Z",
+        "majorUpgradeAppPath": "/Applications/Install macOS Monterey.app",
+        "requiredInstallationDate": "2022-10-28T00:00:00Z",
         "requiredMinimumOSVersion": "12.6",
         "targetedOSVersionsRule": "default"
       }
     ],
     "userExperience": {
-      "allowGracePeriods": false,
+      "allowGracePeriods": true,
       "allowUserQuitDeferrals": true,
       "allowedDeferrals": 1000000,
       "allowedDeferralsUntilForcedSecondaryQuitButton": 14,

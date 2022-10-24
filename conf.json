@@ -17,7 +17,7 @@
       {
         "requiredInstallationDate": "2022-10-25T00:00:00Z",
         "requiredMinimumOSVersion": "12.6",
-        "targetedOSVersionsRule": "12.5"
+        "targetedOSVersionsRule": "12"
       }
     ],
     "userExperience": {

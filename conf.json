@@ -4,7 +4,7 @@
       "acceptableAssertionUsage": false,
       "acceptableCameraUsage": true,
       "acceptableScreenSharingUsage": true,
-      "aggressiveUserExperience": true,
+      "aggressiveUserExperience": false,
       "aggressiveUserFullScreenExperience": false,
       "asynchronousSoftwareUpdate": true,
       "attemptToBlockApplicationLaunches": false,
@@ -17,7 +17,7 @@
       {
         "requiredInstallationDate": "2022-10-25T00:00:00Z",
         "requiredMinimumOSVersion": "12.6",
-        "targetedOSVersionsRule": "12.5.1"
+        "targetedOSVersionsRule": "12.5"
       }
     ],
     "userExperience": {
@@ -25,7 +25,7 @@
       "allowUserQuitDeferrals": false,
       "allowedDeferrals": 3,
       "allowedDeferralsUntilForcedSecondaryQuitButton": 4,
-      "approachingRefreshCycle": 120,
+      "approachingRefreshCycle": 6000,
       "approachingWindowTime": 72,
       "elapsedRefreshCycle": 300,
       "gracePeriodInstallDelay": 23,
@@ -33,7 +33,7 @@
       "gracePeriodPath": "/private/var/db/.AppleSetupDone",
       "imminentRefreshCycle": 600,
       "imminentWindowTime": 24,
-      "initialRefreshCycle": 60,
+      "initialRefreshCycle": 18000,
       "maxRandomDelayInSeconds": 12,
       "noTimers": false,
       "nudgeRefreshCycle": 60,
